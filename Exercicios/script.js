@@ -3,7 +3,7 @@ function carregar(){
         let horaDia  = new Date     
         let hora = horaDia.getHours()
         let minuto = horaDia.getMinutes()
-
+         let a = 19
         if(minuto <= 9 ){
             minuto = `0${minuto}` 
         }
