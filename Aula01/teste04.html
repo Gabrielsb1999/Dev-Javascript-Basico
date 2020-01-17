@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <style>
+        body{
+            background-color: coral;
+            color:black;
+            font: normal 15pt Tahoma;
+        }
+
+        div#quadrado{
+            background-color: darkgreen;
+            color:lightcyan;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+
+        }
+
+        input.campo{
+            width: 128px;
+            height: 20px;
+        }
+
+        button#soma{
+            height: 25px;
+            width: auto;
+        }
+
+        label#res{
+            width:auto;
+            height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id=quadrado>
+        Clique aqui...
+    </div>
+
+    <input id='campo1' class='campo'> 
+
+    </input>
+     +
+    <input id='campo2' class='campo'> 
+
+    </input>
+    <button id='soma'>
+        Somar
+    </button> </br>
+    <label id='res'></label>
+
+
+    <script>      
+        var obj = document.getElementById('quadrado')
+        obj.addEventListener('click',clicar)
+        obj.addEventListener('mouseout',mudar)
+
+        var btnSoma = document.getElementById('soma')
+        btnSoma.addEventListener('click',somar)
+
+        var n1 = document.getElementById('campo1')
+        var n2 = document.getElementById('campo2')
+        
+
+        function clicar(){
+            
+            obj.innerText = 'Clicou!'
+            obj.style.backgroundColor = 'Blue'
+            
+        }
+
+        function mudar(){
+            obj.style.backgroundColor = 'Red'
+            obj.innerText = 'Clique de novo'         
+        }
+
+        function somar(){
+            var lblRes = document.getElementById('res')
+            lblRes.innerText = `O valor da soma entre ${n1.value} e ${n2.value} é ${Number(n1.value)+Number(n2.value)}`
+        }
+
+    </script>
+
+
+</body>
+</html>

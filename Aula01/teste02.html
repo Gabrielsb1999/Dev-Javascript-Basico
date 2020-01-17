@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste 02</title>
+    <style>
+        body{
+            background-color: crimson;
+            color:white;
+            font: normal 18pt Tahoma;
+        }
+
+        p{
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Olá, Mundo!</p>
+    <script>
+        var nome = window.prompt('Caixa de texto');
+        window.alert(`O nome digitado foi ${nome}`) // placeholder 'Template String'
+        var valor = 1545.45
+         //valor.toFixed(2) //toFixed usado p/ casas depois do ponto 
+        document.write("O valor é: " + valor.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})) //Colocar em valor monetário(Moeda)
+        
+        
+
+
+
+
+    </script>  
+    
+    
+    
+    
+</body>
+
+</html>

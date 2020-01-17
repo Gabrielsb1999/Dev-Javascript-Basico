@@ -1,0 +1,32 @@
+
+body{
+    color:white;
+    font: 8pt;
+    text-align: center;
+    margin-top: 8%;
+}
+section#principal{
+    margin: auto;
+    width: 600px;
+    padding: 0.5%;
+    border-radius: 10px;
+    text-align: center;
+    background-color:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+    color: black;
+}
+
+div#imagem{
+    padding: 1%;
+    margin: auto;
+}
+
+div#texto{
+    margin-top: 20px;
+    font: 15pt arial;
+}
+
+footer{
+    color:white;
+    font-style: italic;
+}
